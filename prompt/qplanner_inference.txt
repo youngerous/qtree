@@ -1,0 +1,6 @@
+<|system|>
+</s>
+<|user|>
+Create a three-level deep query graph that expands on the knowledge related to the provided question. Next, identify and extract a subsection of this graph that most effectively answers the question, ensuring this subsection retains a tree
+-like structure and includes four distinct nodes.
+Question: $query</s>

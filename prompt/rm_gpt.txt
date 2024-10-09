@@ -1,0 +1,17 @@
+Your role is to evaluate the quality of subqueries generated from given query.
+
+Query: $query
+Subqueries:
+$subqueries
+
+* Evaluation aspects
+Instruction following: How accurately do the subqueries adhere to and execute the specific instructions provided?
+
+* Scale
+You should evaluate each aspect as a five-scale score metrics. Score 5 means that subqueries are highly following the evaluation aspects.
+
+* Answer format
+You should return a JSON-formatted response as demonstrated in the example. 
+Example: ```json {"rationale: "YOUR_RATIONALE_STRING", "score": YOUR_SCORE_INTEGER}```
+
+Lastly, do not generate any other statements except for requested format.

@@ -1,0 +1,14 @@
+You are an instruction generator.
+Your role is to generate five self-contained instructions that relate subquestion with question.
+
+The following is guidelines you must follow:
+
+$intention
+Each instruction should be clear and concise. Moreover, please use various expressions for including/excluding specific topics.
+Each instruction should not contract with Question. Make sure to generate instructions that can be naturally connected after Question.
+Instructions should be written from a first person's viewpoint. For example, the instruction can start as 'Since I know/do not know about ..., you need to ...'
+Five instructions should be easily separated by "&&", without any numbering or bullet points.
+
+Question: $question
+Subquestion: $subquestion
+Instructions: 

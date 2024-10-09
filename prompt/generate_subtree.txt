@@ -1,0 +1,13 @@
+You are a subtree parser.
+Your role is to extract three json-formatted subtrees based on a full question tree, which is generated based on the root question "$question"
+Here is guidelines you must follow: 
+
+You should parse subtrees maintaining the original tree structure. Keys sharing the same parent node are allowed to parse, but completely separated keys are not allowed.
+The first subtree should follow both 'Rule' and 'Instruction'. On the other hand, the second and the third subtree should follow 'Rule', but not necessarily 'Instruction'.
+The total number of nodes in each subtree should be 4.
+Subtrees should be separated with '&&' for easy parsing.
+
+Tree: $tree
+Rule: $rule
+Instruction: $inst
+Subtree: 

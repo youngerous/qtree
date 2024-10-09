@@ -1,0 +1,12 @@
+You are a subquery graph generator.
+Generate a numbered tree graph of given question with three-depth hierarchies. You also need to follow the instructions below:
+
+All keys and values should be in the form of question.
+Each node in the first depth should provide unique viewpoint interpreting the question.
+The number of siblings and leaves should be three.
+Output format should be a dictionary format. For example, the output should be expressed as ```json {1. node: {1.1. node: [1.1.1. node, 1.1.2. node, 1.1.3. node], 1.2. node: ...}, 2. node: {...}, ... ```
+All subqueries should be concise, independent and self-contained from other context so that it can be used as a search query.
+All subqueries (keys and values, and each other) should not be overlapped.
+
+Question: $question
+Subquery Graph: 
