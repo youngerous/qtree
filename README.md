@@ -2,7 +2,7 @@
     
 # Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation
 
-[![Paper](https://img.shields.io/badge/Paper-arxiv.2407.01158-green)](https://arxiv.org/abs/2407.01158)
+[![Paper](https://img.shields.io/badge/Paper-arxiv.2407.01158-red)](https://arxiv.org/abs/2407.01158)
 
 #### Takyoung Kim<sup>1,&ast;</sup>, Kyungjae Lee<sup>2</sup>, Young Rok Jang<sup>2</sup>, Ji Yong Cho<sup>2,3</sup>, Gangwoo Kim<sup>4,&ast;</sup>, Minseok Cho<sup>2</sup>, Moontae Lee<sup>2,5</sup> <br> <sub><sup>1</sup>University of Illinois Urbana-Champaign, <sup>2</sup>LG AI Research, <sup>3</sup>Cornell University, <sup>4</sup>Korea University, <sup>5</sup>University of Illinois Chicago</sub> <br> <sub><sup>&ast;</sup>Work done as a research intern at LG AI Research</sub>
 
@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Interactions with billion-scale large language models typically yield long-form responses due to their extensive parametric capacities, along with retrieval-augmented features. While detailed responses provide insightful viewpoint of a specific subject, they frequently generate redundant and less engaging content that does not meet user interests. In this work, we focus on the role of query outlining (i.e., selected sequence of queries) in scenarios that users request a specific range of information, namely coverage-conditioned ($C^2$) scenarios. For simulating $C^2$ scenarios, we construct QTree, 10K sets of information-seeking queries decomposed with various perspectives on certain topics. By utilizing QTree, we train QPlanner, a 7B language model generating customized query outlines that follow coverage-conditioned queries. We analyze the effectiveness of generated outlines through automatic and human evaluation, targeting on retrieval-augmented generation (RAG). Moreover, the experimental results demonstrate that QPlanner with alignment training can further provide outlines satisfying diverse user interests.
+> Interactions with large language models (LLMs) often yield long and detailed responses, leveraging both parametric knowledge and retrieval-augmented generation (RAG). While these responses can provide rich insights, they often include redundant or less engaging content not aligned with user interests. This issue becomes apparent when users specify particular subtopics to include or exclude -- termed coverage-conditioned ($C^2$) queries -- as LLMs often struggle to provide tailored responses. To address this challenge, we investigate the role of query outlines, sequences of subqueries designed to guide LLMs in generating responses that meet specific user requirements. To systematically create and evaluate these outlines, we introduce **QTree**, a dataset of 10K hierarchical sets of information-seeking subqueries that define structured boundaries for outline creation and evaluation in $C^2$ scenarios. Additionally, we develop **QPlanner**, a 7B language model trained to generate customized outlines within boundaries of QTree. We evaluate the effectiveness of the generated outlines through automatic and human judgements, focusing on their impact within retrieval-augmented generation (RAG) systems. Experimental results demonstrate that QPlanner, especially when trained with alignment techniques like DPO, generates higher-quality outlines that better fulfill diverse user needs. 
 
 ## Resource (QTree)
 
@@ -40,7 +40,7 @@
 
 ## Citation
 ```bibtex
-@misc{kim2024learning,
+@misc{kim2024learningexploreselectcoverageconditioned,
       title={Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation}, 
       author={Takyoung Kim and Kyungjae Lee and Young Rok Jang and Ji Yong Cho and Gangwoo Kim and Minseok Cho and Moontae Lee},
       year={2024},
