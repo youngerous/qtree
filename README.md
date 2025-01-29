@@ -40,10 +40,10 @@
 
 ## Citation
 ```bibtex
-@misc{kim2024learningexploreselectcoverageconditioned,
+@misc{kim2025learningexploreselectcoverageconditioned,
       title={Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation}, 
       author={Takyoung Kim and Kyungjae Lee and Young Rok Jang and Ji Yong Cho and Gangwoo Kim and Minseok Cho and Moontae Lee},
-      year={2024},
+      year={2025},
       eprint={2407.01158},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
