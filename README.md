@@ -40,13 +40,26 @@
 
 ## Citation
 ```bibtex
-@misc{kim2025learningexploreselectcoverageconditioned,
-      title={Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation}, 
-      author={Takyoung Kim and Kyungjae Lee and Young Rok Jang and Ji Yong Cho and Gangwoo Kim and Minseok Cho and Moontae Lee},
-      year={2025},
-      eprint={2407.01158},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.01158}, 
+@inproceedings{kim-etal-2025-learning,
+    title = "Learning to Explore and Select for Coverage-Conditioned Retrieval-Augmented Generation",
+    author = "Kim, Takyoung  and
+      Lee, Kyungjae  and
+      Jang, Young Rok  and
+      Cho, Ji Yong  and
+      Kim, Gangwoo  and
+      Cho, Minseok  and
+      Lee, Moontae",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.80/",
+    pages = "1460--1480",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Interactions with large language models (LLMs) often yield long and detailed responses, leveraging both parametric knowledge and retrieval-augmented generation (RAG). While these responses can provide rich insights, they often include redundant or less engaging content not aligned with user interests. This issue becomes apparent when users specify particular subtopics to include or exclude {--} termed **coverage-conditioned ($C^2$)** queries {--} as LLMs often struggle to provide tailored responses. To address this challenge, we investigate the role of query outlines, sequences of subqueries designed to guide LLMs in generating responses that meet specific user requirements. To systematically create and evaluate these outlines, we introduce **QTree**, a dataset of 10K hierarchical sets of information-seeking subqueries that define structured boundaries for outline creation and evaluation in $C^2$ scenarios. Additionally, we develop **QPlanner**, a 7B language model trained to generate customized outlines within boundaries of QTree. We evaluate the effectiveness of the generated outlines through automatic and human judgements, focusing on their impact within retrieval-augmented generation (RAG) systems. Experimental results demonstrate that QPlanner, especially when trained with alignment techniques like DPO, generates higher-quality outlines that better fulfill diverse user needs."
 }
 ```
